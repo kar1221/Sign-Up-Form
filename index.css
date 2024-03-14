@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   flex-basis: 60%;
-  gap: 30px;
+  gap: 50px;
 }
 
 .background-panel {
@@ -77,18 +77,20 @@ form {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1fr, 7);
   column-gap: 50px;
-  row-gap: 25px;
+  row-gap: 40px;
 }
 
-form legend {
+form h3 {
   font-family: var(--font-family);
   color: var(--base-color);
   font-size: 1.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  justify-self: center;
 }
 
 .form-row {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
 }
@@ -136,27 +138,27 @@ form legend {
 }
 
 .form-row input:focus + label,
-.form-row input:user-valid + label,
-.form-row input:user-invalid + label {
+.form-row input.valid + label,
+.form-row input.invalid + label {
   top: 0;
   padding: 7px;
   border-radius: var(--border-radius);
 }
 
-.form-row input:user-valid {
+.form-row input.valid {
   border: 2px solid var(--success-color);
 }
 
-.form-row input:user-valid + label {
+.form-row input.valid + label {
   color: white;
   background-color: var(--success-color);
 }
 
-.form-row input:user-invalid {
+.form-row input.invalid {
   border: 2px solid var(--warning-color);
 }
 
-.form-row input:user-invalid + label {
+.form-row input.invalid + label {
   top: 0;
   background-color: var(--warning-color);
   color: white;
@@ -169,4 +171,13 @@ form legend {
 .form-row input:focus + label {
   color: white;
   background-color: var(--accent-color);
+}
+
+.invalid-message {
+  display: none;
+  position: absolute;
+  top: 110%;
+  font-family: var(--font-family);
+  color: var(--warning-color);
+  margin-left: 12px;
 }
