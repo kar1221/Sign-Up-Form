@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/f15ed3e5fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Sign up Form</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="main-panel">
+        <div class="logo-container">
+          <i class="fa-regular fa-note-sticky accent"></i>
+          <h1>Remindy</h1>
+        </div>
+        <div class="slogan-container">
+          <h2>All your valuable <span>memories</span> in one place.</h2>
+        </div>
+        <form action="#">
+          <legend class="form-row full">Sign up for more</legend>
+          <div class="form-row">
+            <input
+              type="text"
+              name="firstname"
+              id="first_name"
+              aria-required="true"
+              required
+            />
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="form-row">
+            <input
+              type="text"
+              name="lastname"
+              id="last_name"
+              aria-required="true"
+              required
+            />
+            <label for="last_name">Last Name</label>
+          </div>
+          <div class="form-row full">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              aria-required="true"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-row full">
+            <input
+              type="password"
+              name="pwd"
+              id="password"
+              aria-required="true"
+              required
+            />
+            <label for="password">Password</label>
+          </div>
+          <div class="form-row full">
+            <input
+              type="password"
+              name="con_pwd"
+              id="confirm_password"
+              aria-required="true"
+              required
+            />
+            <label for="confirm_password">Confirm Password</label>
+          </div>
+          <div class="form-row full">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <section class="background-panel"></section>
+    </main>
+  </body>
+</html>
